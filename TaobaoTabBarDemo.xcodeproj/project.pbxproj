@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17B506D72244A51B007AE2BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B506D62244A51B007AE2BC /* AppDelegate.m */; };
+		17B506DD2244A51B007AE2BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B506DB2244A51B007AE2BC /* Main.storyboard */; };
+		17B506DF2244A51D007AE2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B506DE2244A51D007AE2BC /* Assets.xcassets */; };
+		17B506E22244A51D007AE2BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B506E02244A51D007AE2BC /* LaunchScreen.storyboard */; };
+		17B506E52244A51D007AE2BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B506E42244A51D007AE2BC /* main.m */; };
+		17B506EF2244A51D007AE2BC /* TaobaoTabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B506EE2244A51D007AE2BC /* TaobaoTabBarDemoTests.m */; };
+		17B506FA2244A51D007AE2BC /* TaobaoTabBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B506F92244A51D007AE2BC /* TaobaoTabBarDemoUITests.m */; };
+		17B507092244A613007AE2BC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B507082244A613007AE2BC /* FirstViewController.m */; };
+		17B5070C2244A61E007AE2BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5070B2244A61E007AE2BC /* SecondViewController.m */; };
+		17B5070F2244A626007AE2BC /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5070E2244A626007AE2BC /* ThirdViewController.m */; };
+		17B507122244A634007AE2BC /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B507112244A634007AE2BC /* FourViewController.m */; };
+		17B507152244A641007AE2BC /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B507142244A641007AE2BC /* FifthViewController.m */; };
+		17B507222244A7FE007AE2BC /* WMTabBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5071A2244A7FE007AE2BC /* WMTabBarItemCell.m */; };
+		17B507232244A7FE007AE2BC /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5071D2244A7FE007AE2BC /* WMTabBar.m */; };
+		17B507242244A7FE007AE2BC /* WMTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5071E2244A7FE007AE2BC /* WMTabBarItem.m */; };
+		17B507252244A7FE007AE2BC /* WMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5071F2244A7FE007AE2BC /* WMTabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17B506EB2244A51D007AE2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B506CA2244A51B007AE2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17B506D12244A51B007AE2BC;
+			remoteInfo = TaobaoTabBarDemo;
+		};
+		17B506F62244A51D007AE2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B506CA2244A51B007AE2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17B506D12244A51B007AE2BC;
+			remoteInfo = TaobaoTabBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17B506D22244A51B007AE2BC /* TaobaoTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaobaoTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B506D52244A51B007AE2BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17B506D62244A51B007AE2BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17B506DC2244A51B007AE2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17B506DE2244A51D007AE2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17B506E12244A51D007AE2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17B506E32244A51D007AE2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B506E42244A51D007AE2BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17B506EA2244A51D007AE2BC /* TaobaoTabBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaobaoTabBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B506EE2244A51D007AE2BC /* TaobaoTabBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaobaoTabBarDemoTests.m; sourceTree = "<group>"; };
+		17B506F02244A51D007AE2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B506F52244A51D007AE2BC /* TaobaoTabBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaobaoTabBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B506F92244A51D007AE2BC /* TaobaoTabBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaobaoTabBarDemoUITests.m; sourceTree = "<group>"; };
+		17B506FB2244A51D007AE2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B507072244A613007AE2BC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		17B507082244A613007AE2BC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		17B5070A2244A61E007AE2BC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		17B5070B2244A61E007AE2BC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		17B5070D2244A626007AE2BC /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		17B5070E2244A626007AE2BC /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		17B507102244A634007AE2BC /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		17B507112244A634007AE2BC /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		17B507132244A641007AE2BC /* FifthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		17B507142244A641007AE2BC /* FifthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		17B5071A2244A7FE007AE2BC /* WMTabBarItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarItemCell.m; sourceTree = "<group>"; };
+		17B5071B2244A7FE007AE2BC /* WMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarController.h; sourceTree = "<group>"; };
+		17B5071C2244A7FE007AE2BC /* WMTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarItem.h; sourceTree = "<group>"; };
+		17B5071D2244A7FE007AE2BC /* WMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
+		17B5071E2244A7FE007AE2BC /* WMTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarItem.m; sourceTree = "<group>"; };
+		17B5071F2244A7FE007AE2BC /* WMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarController.m; sourceTree = "<group>"; };
+		17B507202244A7FE007AE2BC /* WMTabBarItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarItemCell.h; sourceTree = "<group>"; };
+		17B507212244A7FE007AE2BC /* WMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17B506CF2244A51B007AE2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506E72244A51D007AE2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506F22244A51D007AE2BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B506C92244A51B007AE2BC = {
+			isa = PBXGroup;
+			children = (
+				17B506D42244A51B007AE2BC /* TaobaoTabBarDemo */,
+				17B506ED2244A51D007AE2BC /* TaobaoTabBarDemoTests */,
+				17B506F82244A51D007AE2BC /* TaobaoTabBarDemoUITests */,
+				17B506D32244A51B007AE2BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17B506D32244A51B007AE2BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17B506D22244A51B007AE2BC /* TaobaoTabBarDemo.app */,
+				17B506EA2244A51D007AE2BC /* TaobaoTabBarDemoTests.xctest */,
+				17B506F52244A51D007AE2BC /* TaobaoTabBarDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17B506D42244A51B007AE2BC /* TaobaoTabBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				17B506D52244A51B007AE2BC /* AppDelegate.h */,
+				17B506D62244A51B007AE2BC /* AppDelegate.m */,
+				17B507192244A7FE007AE2BC /* TabBar */,
+				17B507072244A613007AE2BC /* FirstViewController.h */,
+				17B507082244A613007AE2BC /* FirstViewController.m */,
+				17B5070A2244A61E007AE2BC /* SecondViewController.h */,
+				17B5070B2244A61E007AE2BC /* SecondViewController.m */,
+				17B5070D2244A626007AE2BC /* ThirdViewController.h */,
+				17B5070E2244A626007AE2BC /* ThirdViewController.m */,
+				17B507102244A634007AE2BC /* FourViewController.h */,
+				17B507112244A634007AE2BC /* FourViewController.m */,
+				17B507132244A641007AE2BC /* FifthViewController.h */,
+				17B507142244A641007AE2BC /* FifthViewController.m */,
+				17B506DB2244A51B007AE2BC /* Main.storyboard */,
+				17B506DE2244A51D007AE2BC /* Assets.xcassets */,
+				17B506E02244A51D007AE2BC /* LaunchScreen.storyboard */,
+				17B506E32244A51D007AE2BC /* Info.plist */,
+				17B506E42244A51D007AE2BC /* main.m */,
+			);
+			path = TaobaoTabBarDemo;
+			sourceTree = "<group>";
+		};
+		17B506ED2244A51D007AE2BC /* TaobaoTabBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				17B506EE2244A51D007AE2BC /* TaobaoTabBarDemoTests.m */,
+				17B506F02244A51D007AE2BC /* Info.plist */,
+			);
+			path = TaobaoTabBarDemoTests;
+			sourceTree = "<group>";
+		};
+		17B506F82244A51D007AE2BC /* TaobaoTabBarDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17B506F92244A51D007AE2BC /* TaobaoTabBarDemoUITests.m */,
+				17B506FB2244A51D007AE2BC /* Info.plist */,
+			);
+			path = TaobaoTabBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		17B507192244A7FE007AE2BC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				17B5071B2244A7FE007AE2BC /* WMTabBarController.h */,
+				17B5071F2244A7FE007AE2BC /* WMTabBarController.m */,
+				17B507212244A7FE007AE2BC /* WMTabBar.h */,
+				17B5071D2244A7FE007AE2BC /* WMTabBar.m */,
+				17B5071C2244A7FE007AE2BC /* WMTabBarItem.h */,
+				17B5071E2244A7FE007AE2BC /* WMTabBarItem.m */,
+				17B507202244A7FE007AE2BC /* WMTabBarItemCell.h */,
+				17B5071A2244A7FE007AE2BC /* WMTabBarItemCell.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17B506D12244A51B007AE2BC /* TaobaoTabBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B506FE2244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemo" */;
+			buildPhases = (
+				17B506CE2244A51B007AE2BC /* Sources */,
+				17B506CF2244A51B007AE2BC /* Frameworks */,
+				17B506D02244A51B007AE2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaobaoTabBarDemo;
+			productName = TaobaoTabBarDemo;
+			productReference = 17B506D22244A51B007AE2BC /* TaobaoTabBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17B506E92244A51D007AE2BC /* TaobaoTabBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B507012244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemoTests" */;
+			buildPhases = (
+				17B506E62244A51D007AE2BC /* Sources */,
+				17B506E72244A51D007AE2BC /* Frameworks */,
+				17B506E82244A51D007AE2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17B506EC2244A51D007AE2BC /* PBXTargetDependency */,
+			);
+			name = TaobaoTabBarDemoTests;
+			productName = TaobaoTabBarDemoTests;
+			productReference = 17B506EA2244A51D007AE2BC /* TaobaoTabBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17B506F42244A51D007AE2BC /* TaobaoTabBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B507042244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemoUITests" */;
+			buildPhases = (
+				17B506F12244A51D007AE2BC /* Sources */,
+				17B506F22244A51D007AE2BC /* Frameworks */,
+				17B506F32244A51D007AE2BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17B506F72244A51D007AE2BC /* PBXTargetDependency */,
+			);
+			name = TaobaoTabBarDemoUITests;
+			productName = TaobaoTabBarDemoUITests;
+			productReference = 17B506F52244A51D007AE2BC /* TaobaoTabBarDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17B506CA2244A51B007AE2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Climb 王";
+				TargetAttributes = {
+					17B506D12244A51B007AE2BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					17B506E92244A51D007AE2BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17B506D12244A51B007AE2BC;
+					};
+					17B506F42244A51D007AE2BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17B506D12244A51B007AE2BC;
+					};
+				};
+			};
+			buildConfigurationList = 17B506CD2244A51B007AE2BC /* Build configuration list for PBXProject "TaobaoTabBarDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17B506C92244A51B007AE2BC;
+			productRefGroup = 17B506D32244A51B007AE2BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17B506D12244A51B007AE2BC /* TaobaoTabBarDemo */,
+				17B506E92244A51D007AE2BC /* TaobaoTabBarDemoTests */,
+				17B506F42244A51D007AE2BC /* TaobaoTabBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17B506D02244A51B007AE2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B506E22244A51D007AE2BC /* LaunchScreen.storyboard in Resources */,
+				17B506DF2244A51D007AE2BC /* Assets.xcassets in Resources */,
+				17B506DD2244A51B007AE2BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506E82244A51D007AE2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506F32244A51D007AE2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17B506CE2244A51B007AE2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B507122244A634007AE2BC /* FourViewController.m in Sources */,
+				17B5070C2244A61E007AE2BC /* SecondViewController.m in Sources */,
+				17B5070F2244A626007AE2BC /* ThirdViewController.m in Sources */,
+				17B506E52244A51D007AE2BC /* main.m in Sources */,
+				17B507242244A7FE007AE2BC /* WMTabBarItem.m in Sources */,
+				17B507222244A7FE007AE2BC /* WMTabBarItemCell.m in Sources */,
+				17B507092244A613007AE2BC /* FirstViewController.m in Sources */,
+				17B507232244A7FE007AE2BC /* WMTabBar.m in Sources */,
+				17B507152244A641007AE2BC /* FifthViewController.m in Sources */,
+				17B506D72244A51B007AE2BC /* AppDelegate.m in Sources */,
+				17B507252244A7FE007AE2BC /* WMTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506E62244A51D007AE2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B506EF2244A51D007AE2BC /* TaobaoTabBarDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B506F12244A51D007AE2BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B506FA2244A51D007AE2BC /* TaobaoTabBarDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17B506EC2244A51D007AE2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17B506D12244A51B007AE2BC /* TaobaoTabBarDemo */;
+			targetProxy = 17B506EB2244A51D007AE2BC /* PBXContainerItemProxy */;
+		};
+		17B506F72244A51D007AE2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17B506D12244A51B007AE2BC /* TaobaoTabBarDemo */;
+			targetProxy = 17B506F62244A51D007AE2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17B506DB2244A51B007AE2BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B506DC2244A51B007AE2BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17B506E02244A51D007AE2BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B506E12244A51D007AE2BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17B506FC2244A51D007AE2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17B506FD2244A51D007AE2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17B506FF2244A51D007AE2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17B507002244A51D007AE2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17B507022244A51D007AE2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaobaoTabBarDemo.app/TaobaoTabBarDemo";
+			};
+			name = Debug;
+		};
+		17B507032244A51D007AE2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaobaoTabBarDemo.app/TaobaoTabBarDemo";
+			};
+			name = Release;
+		};
+		17B507052244A51D007AE2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaobaoTabBarDemo;
+			};
+			name = Debug;
+		};
+		17B507062244A51D007AE2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
+				INFOPLIST_FILE = TaobaoTabBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alibaba.TaobaoTabBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaobaoTabBarDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17B506CD2244A51B007AE2BC /* Build configuration list for PBXProject "TaobaoTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B506FC2244A51D007AE2BC /* Debug */,
+				17B506FD2244A51D007AE2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17B506FE2244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B506FF2244A51D007AE2BC /* Debug */,
+				17B507002244A51D007AE2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17B507012244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B507022244A51D007AE2BC /* Debug */,
+				17B507032244A51D007AE2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17B507042244A51D007AE2BC /* Build configuration list for PBXNativeTarget "TaobaoTabBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B507052244A51D007AE2BC /* Debug */,
+				17B507062244A51D007AE2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17B506CA2244A51B007AE2BC /* Project object */;
+}
