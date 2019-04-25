@@ -99,4 +99,9 @@
     [self.wmTabBar selectedTabbarAtIndex:@(index)];
 }
 
+// 暴露外部的切换动画logo和火箭的方法
+- (void)pushHomeTabBarAnimationType:(anmationDirection)anmationDirection {
+    [self.wmTabBar pushHomeTabBarAnimationType:anmationDirection];
+}
+
 @end

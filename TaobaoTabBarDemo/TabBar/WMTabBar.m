@@ -82,6 +82,18 @@
     }];
 }
 
+// 暴露外部的切换动画logo和火箭的方法
+- (void)pushHomeTabBarAnimationType:(anmationDirection )anmationDirection {
+    if (self.itemArray.count > 0) {
+        WMTabBarItem *tabBarItem = self.itemArray[0];
+        if (anmationDirection == anmationDirectionUp) {
+            [tabBarItem pushHomeTabAnimationUp];
+        }else {
+            [tabBarItem pushHomeTabAnimationDown];
+        }
+    }
+}
+
 #pragma mark - lazy
 - (NSMutableArray *)itemArray {
     if (!_itemArray) {

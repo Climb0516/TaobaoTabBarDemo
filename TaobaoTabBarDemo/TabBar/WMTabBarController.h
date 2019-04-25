@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+#import "WMTabBar.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface WMTabBarController : UITabBarController
 
 // 切换指定index的tabbar，用该方法
 - (void)changeTabBarAtIndex:(NSInteger )index;
+
+// 暴露外部的切换动画logo和火箭的方法
+- (void)pushHomeTabBarAnimationType:(anmationDirection )anmationDirection;
 
 @end
 

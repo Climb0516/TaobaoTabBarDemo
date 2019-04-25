@@ -37,12 +37,10 @@
  */
 @property (nonatomic, strong) UICollectionView *collectionView;
 
-
 /*
- *  调试用的flag，用以点击首页tabbar时 logo和火箭切换，h实际项目里根据滑动偏移量通知做具体动画即可
+ *  flag，用以点击首页tabbar时 如果是火箭状态，则进行切换logo动画，且界面滑到顶部
  */
-@property (nonatomic, assign) BOOL tempFlag;
-
+@property (nonatomic, assign) BOOL flag;
 @end
 
 @implementation WMTabBarItem
@@ -116,10 +114,10 @@
             
             // 如果本次点击和上次是同一个tab 都是第0个，则执行push动画，否则执行放大缩小动画
             if (lastSelectIndex == index) {
-                if (self.tempFlag) {
-                    [self pushReverseAnimationWithHomeTab];
-                }else {
-                    [self pushAnimationWithHomeTab];
+                if (self.flag) {
+                    // 如果已经是火箭状态，则点击切换logo，且发通知 让首页滑到顶部
+                    [self pushHomeTabAnimationDown];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"kPushDownAnimationScrollTopNotification" object:nil];
                 }
             }else {
                 [self animationWithHomeTab];
@@ -146,7 +144,7 @@
     }
 }
 
-/** 动画 */
+/** tab之间切换动画 */
 - (void)animationWithHomeTab {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
@@ -167,33 +165,31 @@
 }
 
 // push动画，火箭头出来
--(void)pushAnimationWithHomeTab {
-    self.tempFlag = YES;
-    
-//    /** 第一种方案 */
-//    [self.homeTabAnimateImageView setImage:[UIImage imageNamed:@"tabbar_home_selecetedPush"]];
-//    CATransition *animation = [CATransition animation];
-//    animation.type = kCATransitionPush;//设置动画的类型
-//    animation.subtype = kCATransitionFromTop; //设置动画的方向
-//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    animation.duration = 0.25f;
-//    [self.homeTabAnimateImageView.layer addAnimation:animation forKey:@"pushAnimation"];
+-(void)pushHomeTabAnimationUp {
+    self.flag = YES;
+    //    /** 第一种方案 */
+    //    [self.homeTabAnimateImageView setImage:[UIImage imageNamed:@"tabbar_home_selecetedPush"]];
+    //    CATransition *animation = [CATransition animation];
+    //    animation.type = kCATransitionPush;//设置动画的类型
+    //    animation.subtype = kCATransitionFromTop; //设置动画的方向
+    //    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    //    animation.duration = 0.25f;
+    //    [self.homeTabAnimateImageView.layer addAnimation:animation forKey:@"pushAnimation"];
     
     /** 第二种方案 */
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
 }
 
 // push动画，火箭头落下
--(void)pushReverseAnimationWithHomeTab {
-    self.tempFlag = NO;
-    
-//    /** 第一种方案 */
-//    [self.homeTabAnimateImageView setImage:[UIImage imageNamed:@"tabbar_home_selecetedLogo"]];
-//    CATransition *animation = [CATransition animation];
-//    animation.type = kCATransitionPush;//设置动画的类型
-//    animation.subtype = kCATransitionFromBottom; //设置动画的方向
-//    animation.duration = 0.25f;
-//    [self.homeTabAnimateImageView.layer addAnimation:animation forKey:@"pushAnimation"];
+-(void)pushHomeTabAnimationDown {
+    self.flag = NO;
+    //    /** 第一种方案 */
+    //    [self.homeTabAnimateImageView setImage:[UIImage imageNamed:@"tabbar_home_selecetedLogo"]];
+    //    CATransition *animation = [CATransition animation];
+    //    animation.type = kCATransitionPush;//设置动画的类型
+    //    animation.subtype = kCATransitionFromBottom; //设置动画的方向
+    //    animation.duration = 0.25f;
+    //    [self.homeTabAnimateImageView.layer addAnimation:animation forKey:@"pushAnimation"];
     
     /** 第二种方案 */
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];

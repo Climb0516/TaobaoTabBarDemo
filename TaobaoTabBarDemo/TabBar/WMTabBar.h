@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// logo和火箭切换动画的枚举anmationDirection
+typedef NS_ENUM(NSUInteger, anmationDirection) {
+    anmationDirectionUp,//push动画，火箭头出来，logo下去
+    anmationDirectionDown,//push动画，火箭头下去，logo出来
+};
+
 @protocol WMTabBarDelegate <NSObject>
 
 /** 选中tabbar */
@@ -29,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 外部指定跳转到某个tab时调用
 - (void)selectedTabbarAtIndex:(NSNumber *)index;
+
+// 暴露外部的切换动画logo和火箭的方法
+- (void)pushHomeTabBarAnimationType:(anmationDirection )anmationDirection;
 
 @end
 
