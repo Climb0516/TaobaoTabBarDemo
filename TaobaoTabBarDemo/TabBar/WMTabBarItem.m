@@ -99,9 +99,10 @@
 
 #pragma mark ----------- Action -------------
 
-// 当点击tab时，执行
+// 当点击tab的item时，执行
 - (void)configTitle:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage index:(NSInteger)index selected:(BOOL)selected lastSelectIndex:(NSInteger )lastSelectIndex {
     self.titleLabel.text = title;
+    // 当index == 0, 即首页tab
     if (index == 0) {
         if (selected) {
             [self.homeTabSelectedBgView setImage:[UIImage imageNamed:@"tabbar_home_selecetedBg"]];
@@ -128,6 +129,7 @@
             self.imageView.hidden = self.titleLabel.hidden = NO;
         }
     }else {
+        // 其他tab
         self.homeTabSelectedBgView.hidden = YES;
         self.imageView.hidden = self.titleLabel.hidden = NO;
         if (selected) {

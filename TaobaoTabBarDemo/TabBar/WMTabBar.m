@@ -74,8 +74,11 @@
 - (void)setSelectedIndex:(NSInteger )selectedIndex {
     _selectedIndex = selectedIndex;
     [self.itemArray enumerateObjectsUsingBlock:^(WMTabBarItem *tabBarItem, NSUInteger idx, BOOL * _Nonnull stop) {
+        // 当遍历的idx=selectedIndex时，记录选中状态
         BOOL selected = (idx == selectedIndex);
+        // 配置tabBarItem的内容信息
         [tabBarItem configTitle:self.titleArray[idx] normalImage:self.imageArray[idx] selectedImage:self.selectedImageArray[idx] index:idx selected:selected lastSelectIndex:self.lastSelectIndex];
+        // 当遍历到最后一个时，赋值lastSelectIndex
         if (idx == (self.itemArray.count-1)) {
             self.lastSelectIndex = selectedIndex;
         }
