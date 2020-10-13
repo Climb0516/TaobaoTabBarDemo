@@ -6,7 +6,7 @@
 最近项目改版里，产品设计重新设计了tabbar动画，旨在提升app的逼格。。。 
 设计图是借鉴淘宝的tabBar：
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g2v2ucnju7g30bi0owhe7.gif)
+![](https://wx1.sinaimg.cn/large/006tNc79ly1g2v2ucnju7g30bi0owhe7.gif)
 
 
 
@@ -250,7 +250,7 @@ tab在相互点击切换选中时的缩小放大动画，通过CABasicAnimation�
 
 ```
 效果如下：
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g2uuor58sbg30c80lrqv5.gif)
+![](https://wx1.sinaimg.cn/large/006tNc79ly1g2uuor58sbg30c80lrqv5.gif)
 
 ### 4.当首页滑动到一定距离时，首页tab的大logo和小火箭执行切换动画
 
@@ -361,7 +361,7 @@ typedef NS_ENUM(NSUInteger, anmationDirection) {
 ```
 效果如下：
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1g2uuq8uf8rg30hs0vmu0z.gif)
+![](https://wx1.sinaimg.cn/large/006tNc79ly1g2uuq8uf8rg30hs0vmu0z.gif)
 
 
  虽然能实现功能，但在切换过程中，会有残留效果，这显示是不太美好的，再想想有没有更好的实现方法。
@@ -388,7 +388,7 @@ typedef NS_ENUM(NSUInteger, anmationDirection) {
 }
 ```
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1g2uv0hs2e9g30hs0vm4qu.gif)
+![](https://wx1.sinaimg.cn/large/006tNc79ly1g2uv0hs2e9g30hs0vm4qu.gif)
 
 漂亮！
 
